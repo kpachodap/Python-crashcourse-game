@@ -2,14 +2,14 @@ import sys
 
 import pygame
 
-class AlienInvasion
+class AlienInvasion:
     """ Overall vlass ot manage game assets and behavior"""
 
     def __init__ (self):
         """Initialize the game and create game resources"""
         pygame.init()
 
-        self.screen=pygame.sdisplay.set_mode((1200,800))
+        self.screen=pygame.display.set_mode((1200,800))
         pygame.display.set_caption("Alien invasion")
 
     def run_game(self):
@@ -24,9 +24,9 @@ class AlienInvasion
             pygame.display.flip()
 
 
-if __name__ == '__main__'
+if __name__ == '__main__':
     #make a game instance and run the game
-    ai = AlienInvasion
+    ai = AlienInvasion()
     ai.run_game()
 
 
